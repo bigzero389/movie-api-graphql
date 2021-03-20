@@ -17,3 +17,4 @@
   * yarn add babel-node --dev // import 문 사용을 위해서 설치
   * yarn global add babel-cli // { "start" : "nodemon --exec babel-node" } 로 실행토록 함. 
   * yarn global add babel-cli --ignore-engines // why?
+  * localhost:4000 접속함 => 안됨. wsl 에서 ip addr 에 있는 172.28.156.57:4000 으로 접속해서 해결함. why localhost is not able ?
