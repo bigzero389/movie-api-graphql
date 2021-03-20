@@ -13,3 +13,7 @@
   * under-fetch, over-fetch 를 처리해 준다.
   * Rest 로 되어 있는 http query 를 JSON query 로 바꿔준다.
   * yarn global add nodemon // 소스가 변경될때마다 서버자동 반영
+  * package.json 에 "scripts": { "start" : "nodemon" } 추가함. 이제 yarn start 로 기동함.
+  * yarn add babel-node --dev // import 문 사용을 위해서 설치
+  * yarn global add babel-cli // { "start" : "nodemon --exec babel-node" } 로 실행토록 함. 
+  * yarn global add babel-cli --ignore-engines // why?

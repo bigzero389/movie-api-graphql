@@ -6,5 +6,11 @@
   "license": "MIT",
   "dependencies": {
     "graphql-yoga": "^1.18.3"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node"
+  },
+  "devDependencies": {
+    "babel-node": "^0.0.1-security"
   }
 }
