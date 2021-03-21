@@ -48,6 +48,14 @@
     deleteMovie(id:3)
   }
   ```
+  ```
+  query {
+    movies(limit:5,rating:8.5) {
+      title
+      rating    
+    }
+  }
+  ```
 
 
 
