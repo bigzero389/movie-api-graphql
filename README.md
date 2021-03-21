@@ -24,6 +24,32 @@
 ### Note  
   * [Person]! => Data type is array, "!" is not null condition
   * resolver 는 기본적으로 View 같은것, 무엇이든지 될 수 있음.
-  
+  * mutation sample
+  ```
+  query {
+    movies {
+      id
+      name
+      score
+    }
+  }
+  ```
+  ```
+  mutation {
+  addMovie(name: "bigzeroTestMovie", score: 9) {
+      name
+      id
+      score
+    }
+  }
+  ```
+  ```
+  mutation {
+    deleteMovie(id:3)
+  }
+  ```
+
+
+
 
  
