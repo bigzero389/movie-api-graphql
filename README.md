@@ -20,7 +20,7 @@
   * localhost:4000 접속함 => 안됨. wsl 에서 ip addr 에 있는 172.28.156.57:4000 으로 접속해서 해결함. why localhost is not able ?
   * By 0.5 Creating the first Query and Resolver
 
-## 2021-03-21(일) init
+## 2021-03-21(일) finish
 ### Note  
   * [Person]! => Data type is array, "!" is not null condition
   * resolver 는 기본적으로 View 같은것, 무엇이든지 될 수 있음.
