@@ -1,9 +1,7 @@
 # install setting
+* yarn add global nodemon babel-cli
 * yarn add graphql-yoga
-* yarn add global nodemon
-* yarn add babel-node --dev
-* yarn global add babel-cli
-* yarn add babel-cli babel-preset-env babel-preset-stage-3 --dev
+* yarn add babel-node babel-cli babel-preset-env babel-preset-stage-3 --dev
 * index.js 수정 , nodemon 시작 추가.
 * yarn start
 * http://localhost:4000/ 에서 graphql playground 확인
