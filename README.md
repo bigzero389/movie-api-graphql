@@ -1,6 +1,6 @@
 # install setting
 * yarn add global nodemon babel-cli
-* yarn add graphql-yoga
+* yarn add graphql-yoga axios
 * yarn add babel-node babel-cli babel-preset-env babel-preset-stage-3 --dev
 * index.js 수정 , nodemon 시작 추가.
 * yarn start
