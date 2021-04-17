@@ -9,7 +9,8 @@ const MOVIE_SUGGESTIONS_URL = `${BASE_URL}movie_suggestions.json`;
 const API_URL = "https://yts.mx/api/v2/list_movies.json";
 
 export const getMovies = (limit, rating) => {
-  let REQUEST_URL = API_URL;
+  //let REQUEST_URL = API_URL;
+  let REQUEST_URL = LIST_MOVIES_URL;
   let prefix = "?";
   if(limit > 0) {
     REQUEST_URL += prefix + `limit=${limit}`;
