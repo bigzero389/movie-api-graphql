@@ -1,4 +1,4 @@
-# info
+# info.
 * repository is github : https://github.com/largezero/movieql_mine.git
 ## install setting
 * yarn add global nodemon babel-cli
