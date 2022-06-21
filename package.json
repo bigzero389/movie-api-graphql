@@ -5,11 +5,12 @@
   "author": "bigzero",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.27.2",
     "global": "^4.4.0",
-    "graphql-yoga": "^1.18.3",
-    "node-fetch": "^2.6.1",
-    "nodemon": "^2.0.7"
+    "graphql": "^16.5.0",
+    "graphql-yoga": "^2.9.2",
+    "node-fetch": "^3.2.6",
+    "nodemon": "^2.0.15"
   },
   "scripts": {
     "start": "nodemon --exec babel-node index.js"
