@@ -1,5 +1,5 @@
 # info.
-* repository is github : https://github.com/largezero/movieql_mine.git
+* repository is github : https://github.com/bigzero389/movie-api-graphql
 ## install setting
 * yarn add global nodemon babel-cli
 * yarn add graphql graphql-yoga axios
