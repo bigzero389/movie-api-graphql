@@ -7,7 +7,7 @@
 * index.js 수정 , nodemon 시작 추가.
 ## Server run
 * yarn start
-* http://localhost:4000/ 에서 graphql playground 확인
+* http://localhost:4000 에서 실행 및 확인
 
 ## 2021-03-20(토) init
 ### Note  
@@ -49,6 +49,8 @@
 
 ## 2024-04-30(월) fix import
 import 에서 확장자 js 를 누락하여 module import 에러 발생 수정 --thx jojojojo1322
+실행오류 수정 -> graphql-yoga version up
+![실행화면예제](./docs/graphql-running-sample-image.png)
 
 
 

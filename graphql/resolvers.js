@@ -6,13 +6,10 @@ const resolvers = {
     movie: (_, { id }) => getMovie(id),
     suggestions: (_, { id }) => getSuggestions(id),
   },
-  // ,
-  // Mutation: {
-  // addMovie: (_, {name, score}) => addMovie(name, score),
-  // deleteMovie: (_, {id}) => deleteMovie(id)
-  // }
+  Mutation: {
+    addMovie: (_, {name, score}) => addMovie(name, score),
+    deleteMovie: (_, {id}) => deleteMovie(id)
+  }
 };
-
-// module.exports = Resolvers;
 
 export default resolvers;
