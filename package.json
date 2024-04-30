@@ -11,15 +11,16 @@
     "graphql": "^16.8.1",
     "graphql-yoga": "^5.0.2",
     "node-fetch": "~3.3.2",
-    "nodemon": "~3.1.0"
+    "nodemon": "^3.1.0"
   },
   "scripts": {
     "start": "nodemon --exec babel-node index.js"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-node": "^0.0.1-security",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-3": "^6.24.1"
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-stage-3": "^7.8.3"
   }
 }
