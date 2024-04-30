@@ -2,7 +2,7 @@ import { createServer } from "node:http";
 import { createYoga } from "graphql-yoga";
 import resolvers from "./graphql/resolvers.js";
 
-// 2024.04.30 조현재
+// 2024.04.30 jojojojo1322
 const yoga = createYoga({
   typeDefs: "graphql/schema.graphql",
   resolvers: resolvers,

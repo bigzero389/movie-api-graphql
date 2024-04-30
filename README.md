@@ -47,6 +47,9 @@
   }
   ```
 
+## 2024-04-30(월) fix import
+import 에서 확장자 js 를 누락하여 module import 에러 발생 수정 --thx jojojojo1322
+
 
 
 
