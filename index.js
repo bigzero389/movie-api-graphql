@@ -1,11 +1,21 @@
-import { GraphQLServer } from "graphql-yoga";
-import resolvers from "./graphql/resolvers";
+import { createServer } from "node:http";
+import { createYoga } from "graphql-yoga";
+import resolvers from "./graphql/resolvers.js";
 
-const PORT = 80;
-const server = new GraphQLServer({
+// 2024.04.30 jojojojo1322
+const yoga = createYoga({
   typeDefs: "graphql/schema.graphql",
-  resolvers: resolvers
-}); 
+  resolvers: resolvers,
+  /*
+    ,
+      Mutation: {
+      addMovie: (_, {name, score}) => addMovie(name, score),
+      deleteMovie: (_, {id}) => deleteMovie(id)
+    }
+    */
+});
 
-server.start({port : PORT},() => console.log("Graphql Server Running"));
-//console.log("bigzero Hello");
+const server = createServer(yoga);
+server.listen(4000, () => {
+  console.log("bigzero Hello");
+});

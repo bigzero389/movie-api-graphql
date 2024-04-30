@@ -1,20 +1,13 @@
-# install setting
+# info.
+* repository is github : https://github.com/bigzero389/movie-api-graphql
+## install setting
 * yarn add global nodemon babel-cli
-* yarn add graphql-yoga axios
+* yarn add graphql graphql-yoga axios
 * yarn add babel-node babel-cli babel-preset-env babel-preset-stage-3 --dev
 * index.js 수정 , nodemon 시작 추가.
+## Server run
 * yarn start
 * http://localhost:4000/ 에서 graphql playground 확인
-
-# GraphQL Study Code from nomad
-## setup
-  * repository is github : https://github.com/largezero/movieql.git
-  * git config user.name "bigzero"
-  * git config user.email "bigzero@outlook.kr"
-  * modir movieql && cd ./movieql
-  * yarn init 으로 초기화 함. ubuntu 에서 "Nosuch file or directory..." yarn 버그 해결 필요
-    + https://stackoverflow.com/questions/46013544/yarn-install-command-error-no-such-file-or-directory-install
-  * yarn add graphql // graphql 추가
 
 ## 2021-03-20(토) init
 ### Note  
@@ -37,23 +30,12 @@
   query {
     movies {
       id
-      name
-      score
+      title
+      rating
+      summary
+      language
+      genres
     }
-  }
-  ```
-  ```
-  mutation {
-  addMovie(name: "bigzeroTestMovie", score: 9) {
-      name
-      id
-      score
-    }
-  }
-  ```
-  ```
-  mutation {
-    deleteMovie(id:3)
   }
   ```
   ```
@@ -64,6 +46,9 @@
     }
   }
   ```
+
+## 2024-04-30(월) fix import
+import 에서 확장자 js 를 누락하여 module import 에러 발생 수정 --thx jojojojo1322
 
 
 
