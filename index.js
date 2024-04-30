@@ -1,28 +1,21 @@
-import { createServer } from 'node:http';
+import { createServer } from "node:http";
 import { createYoga } from "graphql-yoga";
-// import resolvers from './graphql/resolvers';
-// 왜 아래처럼 하드코딩 하면 되고 resolvers 를 import 해서 쓰려고 하면 안되는지 이해가 안됨.
+import resolvers from "./graphql/resolvers.js";
 
+// 2024.04.30 조현재
 const yoga = createYoga({
   typeDefs: "graphql/schema.graphql",
-  // resolvers -> 이렇게 하고 싶음.
-  resolvers: {
-    Query: {
-      movies: (_, {limit, rating}) => getMovies(limit, rating),
-      movie: (_, { id }) => getMovie(id),
-      suggestions: (_, { id }) => getSuggestions(id)
-    }
-    /*
+  resolvers: resolvers,
+  /*
     ,
       Mutation: {
       addMovie: (_, {name, score}) => addMovie(name, score),
       deleteMovie: (_, {id}) => deleteMovie(id)
     }
     */
-  }
-}); 
+});
 
 const server = createServer(yoga);
 server.listen(4000, () => {
   console.log("bigzero Hello");
-})
+});
