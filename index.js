@@ -5,6 +5,7 @@ import { createYoga } from "graphql-yoga";
 
 const yoga = createYoga({
   typeDefs: "graphql/schema.graphql",
+  // resolvers -> 이렇게 하고 싶음.
   resolvers: {
     Query: {
       movies: (_, {limit, rating}) => getMovies(limit, rating),
